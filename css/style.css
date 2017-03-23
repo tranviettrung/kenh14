@@ -1,0 +1,130 @@
+/* Reset */
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+/* Chon tat ca phan tu trong the div voi id la top-header*/
+div#top-header * {
+
+}
+
+body {
+	font-family: Arial, Sans-serif;
+}
+
+div.container {
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+div#top-header {
+	background-color: #111111;
+}
+
+div#top-header a {
+	color: #ffffff;
+	text-decoration: none;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+	background-image: url('../images/toolbar-topic-icon.png');
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 13px;
+
+}
+
+div#header {
+	background-color: #F0A52B;
+	padding-top: 5px;
+	margin-top: 28px;
+}
+
+div#header div.logo a {
+	width: 157px;
+	height: 60px;
+	display: block;
+	background-image: url('../images/sprite-k14.19.png');
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
+
+div#menu, div#menu ul {
+	background: #A70E1A;
+}
+
+div#menu a {
+	color: #ffffff;
+}
+
+div#menu ul{
+	list-style: none;
+	
+}
+
+div#menu li {
+	float: left;
+	position: relative;
+}
+
+div#menu li a {
+	padding: 10px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+div#menu li a:hover {
+	background: #980D17;
+}
+
+div#menu .dropdown {
+	display: none;
+}
+
+div#menu .dropdown a {
+	width: 150px;
+}
+
+div#menu li:hover > .dropdown {
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+}
+
+div#menu .dropdown li:hover > .dropdown {
+	left: 100%;
+	top: 0;
+}
+
+
+
+#top-header {
+	position: fixed;
+	width: 100%;
+	top:0;
+}
+
+.cover-image img {
+	width: 100%;
+}
