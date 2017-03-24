@@ -14,7 +14,8 @@
 .col {
 	float:left;
 	box-sizing: border-box;
-	padding: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .row:before,
