@@ -315,4 +315,10 @@ div.video div.video-lists li:hover {
 div.video div.video-lists::-webkit-scrollbar {
 	width: 5px;
 	background: #2C2C2C;
+	border-radius: 20px;
+}
+
+div.video div.video-lists::-webkit-scrollbar-thumb {
+	background: black;
+	border-radius: 20px;
 }
