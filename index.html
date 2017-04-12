@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Kenh 14</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
@@ -291,16 +292,16 @@
 			<div class="container">
 				<div class="row">
 					<div class="col col-7">
-						<iframe width="100%" height="320d " src="https://www.youtube.com/embed/5LuxYm2Xgr8" frameborder="0" allowfullscreen></iframe>
+						<iframe id="youtube" width="100%" height="320px" src="https://www.youtube.com/embed/5LuxYm2Xgr8" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="col col-5">
 						<div class="video-lists">
 							<ul>
-								<li>
-									<img src="images/hot1.jpg">
+								<li data-url="https://www.youtube.com/embed/GcaCp5buxtk">
+									<img src="images/hot1.jpg" >
 									<h4>Những căn phòng ký túc bẩn còn hơn cả bãi 	rác của sinh viên Trung Quốc khiến nhiều người 	</h4>
 								</li>
-								<li>
+								<li data-url="https://www.youtube.com/embed/GcaCp5buxtk">
 									<img src="images/hot1.jpg">
 									<h4>Những căn phòng ký túc bẩn còn hơn cả bãi 	rác của sinh viên Trung Quốc khiến nhiều người 	</h4>
 								</li>
@@ -329,5 +330,22 @@
 	</div>
 	<a href="#header">back-to-top</a>
 
+	<script type="text/javascript">
+		var videoList = document.getElementsByClassName('video-lists');
+		var liElement = videoList[0].children[0].children;
+
+		console.log(videoList[0]);
+		console.log(videoList[0].children[0]);
+
+		for(var i = 0; i < liElement.length; i++) {
+
+			liElement[i].addEventListener('click', function() {
+				var url = this.getAttribute('data-url');
+				document.getElementById('youtube').setAttribute('src', url);
+			});
+
+		}
+
+	</script>
 </body>
 </html>
